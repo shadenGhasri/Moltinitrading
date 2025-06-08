@@ -1,25 +1,25 @@
-import Link from 'next/link';
-import { Instagram, Facebook, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import Link from "next/link";
+import { Instagram, Facebook, Twitter, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
     products: [
-      { name: 'سرویس آشپزخانه', href: '/category/kitchen' },
-      { name: 'ظروف پذیرایی', href: '/category/dining' },
-      { name: 'کتری و قوری', href: '/category/teapot' },
-      { name: 'قابلمه و زودپز', href: '/category/pots' },
+      { name: "سرویس آشپزخانه", href: "/category/kitchen" },
+      { name: "ظروف پذیرایی", href: "/category/dining" },
+      { name: "کتری و قوری", href: "/category/teapot" },
+      { name: "قابلمه و زودپز", href: "/category/pots" },
     ],
     company: [
-      { name: 'درباره ما', href: '/about' },
-      { name: 'تماس با ما', href: '/contact' },
-      { name: 'وبلاگ', href: '/blog' },
-      { name: 'فرصت‌های شغلی', href: '/careers' },
+      { name: "درباره ما", href: "/about" },
+      { name: "تماس با ما", href: "/contact" },
+      { name: "وبلاگ", href: "/blog" },
+      { name: "فرصت‌های شغلی", href: "/careers" },
     ],
     support: [
-      { name: 'راهنمای خرید', href: '/help/shopping' },
-      { name: 'شرایط بازگشت', href: '/help/returns' },
-      { name: 'حریم خصوصی', href: '/privacy' },
-      { name: 'قوانین و مقررات', href: '/terms' },
+      { name: "راهنمای خرید", href: "/help/shopping" },
+      { name: "شرایط بازگشت", href: "/help/returns" },
+      { name: "حریم خصوصی", href: "/privacy" },
+      { name: "قوانین و مقررات", href: "/terms" },
     ],
   };
 
@@ -33,32 +33,57 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
-                <span>021-12345678</span>
+                <span>٠٩٢٢١٩٦٥٣٣٩</span>
               </div>
               <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5" />
+                <span>٠٩١٢١٩٦٥٣٣٩</span>
+              </div>
+
+              {/* <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
                 <span>info@riverkala.com</span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5" />
-                <span>تهران، خیابان ولیعصر</span>
+                <MapPin className="h-5 w-5 shrink-0" />
+                <span>
+                  تهران ميدان شوش خ صابونيان پاساژ الماسّ طبقه اول پلاك ٣٨٨
+                </span>
               </div>
             </div>
-            <div className="flex space-x-4 mt-6">
-              <a href="#" className="hover:text-blue-400">
+            <div className="flex flex-row items-start space-x-4 mt-6 h-fit">
+              <a
+                href="https://www.instagram.com/moltini_trading"
+                target="_blank"
+                className="hover:text-blue-400 cursor-pointer"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-blue-400">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-blue-400">
-                <Twitter className="h-6 w-6" />
+              <a
+                href="https://whatsapp.com/channel/0029Vb5ws8OHAdNecjaki33b"
+                target="_blank"
+                className="hover:text-blue-400 cursor-pointer h-fit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 21l1.65-4.95a9 9 0 1 1 3.45 3.45L3 21z" />
+                  <path d="M16.2 14.2c-.4 1-1.1 1.5-2 1.2-1.8-.5-3.3-2-4.3-3.6-.7-1.1-.8-2.2.4-2.6.3-.1.6-.1.9.1.2.1.6.6.8.8.1.1.2.3.2.5 0 .2-.2.4-.3.6-.2.2-.3.4-.1.7.3.5 1 1.4 1.8 2 .2.2.5.3.7.2.3-.1.5-.3.7-.5.1-.2.4-.2.6-.1.3.2.8.5 1.1.7.2.2.3.5.2.8z" />
+                </svg>
               </a>
             </div>
           </div>
 
           {/* Products */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">محصولات</h3>
             <ul className="space-y-2">
               {footerLinks.products.map((link) => (
@@ -69,7 +94,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
           <div>
@@ -102,7 +127,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} RiverKala. تمامی حقوق محفوظ است.
+            © {new Date().getFullYear()} moltini. تمامی حقوق محفوظ است.
           </p>
         </div>
       </div>
@@ -110,4 +135,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
