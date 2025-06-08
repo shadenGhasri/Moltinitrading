@@ -13,15 +13,17 @@ const Hero = () => {
     <div className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Main Banner */}
-        <div className="relative h-[400px] rounded-xl overflow-hidden mb-8">
+        <div className="relative h-[400px] rounded-xl overflow-hidden mb-8 bg-white">
           {/* <Image
-            src="https://placehold.co/1200x400"
+            src="/images/moltiniHeader.jpg"
             alt="Featured Products"
             fill
-            className="object-cover"
+            className="object-cover w-full h-full bg-cover bg-no-repeat absolute top-0 left-0"
             priority
           /> */}
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <img src ='/images/moltiniHeader.jpg' className='object-contain w-full h-full bg-center bg-no-repeat absolute top-0 left-0 rounded-xl'/>
+          
+          {/* <div className="absolute inset-0  flex items-center justify-center">
             <div className="text-center text-white">
               <h1 className="text-4xl font-bold mb-4">به فروشگاه مولتینی خوش آمدید</h1>
               <p className="text-xl mb-6">بهترین محصولات آشپزخانه و پذیرایی</p>
@@ -32,8 +34,10 @@ const Hero = () => {
                 مشاهده محصولات
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
+
+        
 
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
