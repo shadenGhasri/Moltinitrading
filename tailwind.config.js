@@ -31,7 +31,9 @@ module.exports = {
         darkgray: "#535353",
         
       },
-  
+      fontFamily: {
+        sans: ['var(--font-bnazanin)'],
+      },
       extend: {
         fontSize: {
           tiny: ["12px", "16px"],

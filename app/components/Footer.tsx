@@ -31,20 +31,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">تماس با ما</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5" />
-                <span>٠٩٢٢١٩٦٥٣٣٩</span>
-              </div>
-              <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 cursor-default">
                 <Phone className="h-5 w-5" />
                 <span>٠٩١٢١٩٦٥٣٣٩</span>
               </div>
+              <div className="flex items-center space-x-3 cursor-default">
+                <Phone className="h-5 w-5" />
+                <span>٠٩١٠٩٥٩٠٩٦٣</span>
+              </div>
+             
 
               {/* <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
                 <span>info@riverkala.com</span>
               </div> */}
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-3 cursor-default">
                 <MapPin className="h-5 w-5 shrink-0" />
                 <span>
                   تهران ميدان شوش خ صابونيان پاساژ الماسّ طبقه اول پلاك ٣٨٨
