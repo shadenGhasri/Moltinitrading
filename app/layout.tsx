@@ -18,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${geist.className} antialiased`}>
+      <head>
+        <link
+          href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={`${geist.className} antialiased`} style={{ fontFamily: 'Vazir, sans-serif' }}>
         {children}
       </body>
     </html>
