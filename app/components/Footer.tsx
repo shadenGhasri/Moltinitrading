@@ -10,16 +10,15 @@ const Footer = () => {
       { name: "قابلمه و زودپز", href: "/category/pots" },
     ],
     company: [
-      { name: "درباره ما", href: "/about" },
+      { name: "درباره ما", href: "/aboutUs" },
       { name: "تماس با ما", href: "/contact" },
-      { name: "وبلاگ", href: "/blog" },
-      { name: "فرصت‌های شغلی", href: "/careers" },
+      // { name: "وبلاگ", href: "/blog" },
     ],
     support: [
       { name: "راهنمای خرید", href: "/help/shopping" },
       { name: "شرایط بازگشت", href: "/help/returns" },
-      { name: "حریم خصوصی", href: "/privacy" },
-      { name: "قوانین و مقررات", href: "/terms" },
+      // { name: "حریم خصوصی", href: "/privacy" },
+      // { name: "قوانین و مقررات", href: "/terms" },
     ],
   };
 
@@ -48,7 +47,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3 cursor-default">
                 <MapPin className="h-5 w-5 shrink-0" />
                 <span>
-                  تهران ميدان شوش خ صابونيان پاساژ الماسّ طبقه اول پلاك ٣٨٨
+                  تهران ميدان شوش خ صابونيان پاساژ الماس طبقه اول پلاك ٣٨٨
                 </span>
               </div>
             </div>
