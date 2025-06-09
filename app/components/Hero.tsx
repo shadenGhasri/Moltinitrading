@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import Link from 'next/link';
 
 const Hero = () => {
@@ -15,13 +15,6 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Main Banner */}
         <div className="relative h-[400px] rounded-xl overflow-hidden mb-8 bg-white">
-          {/* <Image
-            src="/images/moltiniHeader.jpg"
-            alt="Featured Products"
-            fill
-            className="object-cover w-full h-full bg-cover bg-no-repeat absolute top-0 left-0"
-            priority
-          /> */}
           <img src ='/images/moltiniHeader.jpg' className='object-contain w-full h-full bg-center bg-no-repeat absolute top-0 left-0 rounded-xl'/>
           
           {/* <div className="absolute inset-0  flex items-center justify-center">
