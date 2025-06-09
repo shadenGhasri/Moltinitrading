@@ -133,10 +133,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed top-0 left-0 z-50 w-screen">
+    <header className="bg-white fixed top-0 left-0 z-50 w-screen ">
+      {/* web */}
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between py-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -213,7 +214,7 @@ export default function Header() {
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             دسته‌بندی‌ها
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/aboutUs" className="text-sm/6 font-semibold text-gray-900">
             درباره ما
           </a>
 
@@ -240,15 +241,12 @@ export default function Header() {
           </Popover>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end relative">
-          {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a> */}
-           <input
-                    type="text"
-                    placeholder="جستجو..."
-                    className="w-64 px-4  rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 -mx-3 block  py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  />
-                  <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+          <input
+            type="text"
+            placeholder="جستجو..."
+            className="w-64 px-4  rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 -mx-3 block  py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+          />
+          <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
         </div>
       </nav>
       <Dialog
@@ -261,7 +259,6 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="text-2xl font-bold text-gray-800">Moltini</span>
-        
             </a>
             <button
               type="button"
@@ -304,7 +301,7 @@ export default function Header() {
                   دسته‌بندی‌ها
                 </a>
                 <a
-                  href="#"
+                  href="/aboutUs"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   درباره ما
@@ -333,13 +330,6 @@ export default function Header() {
                 </Disclosure>
               </div>
               <div className="py-6">
-                {/* <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a> */}
-
                 <div className="relative hidden md:block">
                   <input
                     type="text"
