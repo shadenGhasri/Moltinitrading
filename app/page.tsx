@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import PopularCategories from "./components/PopularCategories";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
     <main className={`${geist.className} min-h-screen flex flex-col`}>
       <Header />
       <Hero />
+      <PopularCategories />
       <FeaturedProducts />
       <Footer />
     </main>
