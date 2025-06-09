@@ -56,7 +56,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/moltini_trading"
                 target="_blank"
-                className="hover:text-blue-400 cursor-pointer"
+                className="hover:text-blue-400 cursor-pointer mt-0.5"
               >
                 <Instagram className="h-6 w-6" />
               </a>
