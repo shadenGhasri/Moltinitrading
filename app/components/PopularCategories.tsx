@@ -55,7 +55,7 @@ const PopularCategories = () => {
         </div>
 
         {/* Categories Grid - Laftika Style */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
           {categories.map((category) => (
             <Link
               key={category.id}
@@ -64,7 +64,7 @@ const PopularCategories = () => {
             >
               <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-300 h-full flex flex-col">
                 {/* Image Container */}
-                <div className="relative h-32 md:h-40 overflow-hidden">
+                <div className="relative h-20 md:h-40 overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
                     <div className="text-3xl text-gray-400">🏠</div>
                   </div>
@@ -74,8 +74,8 @@ const PopularCategories = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-4 text-center flex-1 flex flex-col justify-center">
-                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors leading-tight">
+                <div className="md:p-4 p-2 text-center flex-1 flex flex-col justify-center">
+                  <h3 className="text-xs md:text-base font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors leading-tight">
                     {category.name}
                   </h3>
                   <p className="text-xs text-gray-500 opacity-70">
