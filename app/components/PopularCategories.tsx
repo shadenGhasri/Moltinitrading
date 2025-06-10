@@ -65,12 +65,6 @@ const PopularCategories = () => {
               <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-300 h-full flex flex-col">
                 {/* Image Container */}
                 <div className="relative h-32 md:h-40 overflow-hidden">
-                  {/* <Image
-                    src={category.image}
-                    alt={category.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  /> */}
                   <div className="w-full h-full bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
                     <div className="text-3xl text-gray-400">🏠</div>
                   </div>
